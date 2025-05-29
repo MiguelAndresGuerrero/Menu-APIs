@@ -1,28 +1,20 @@
-# Menu-APIs 📚
+# Menu-APIs
 
-Este repositorio forma parte de un proyecto desarrollado con **HTML**, **CSS** y **JavaScript**, utilizando **Visual Studio Code** como entorno de desarrollo.  
+**Menu-APIs** es una aplicación web desarrollada con HTML, CSS y JavaScript que presenta un menú interactivo para explorar diferentes APIs públicas. Cada opción del menú permite al usuario acceder y visualizar datos de diversas fuentes externas, facilitando la práctica de consumo de APIs y manipulación del DOM.
 
-## Requisitos previos  
+## 🚀 Requisitos
 
-Antes de ejecutar el proyecto, asegúrese de contar con:  
+- Navegador web actualizado
 
-- Un navegador web actualizado. 🌐
+## 🛠️ Instalación y ejecución
 
-## Instalación y ejecución  
+1. Clona el repositorio:
 
-Sigue estos pasos para configurar y ejecutar el proyecto en tu máquina local:  
-
-1. **Clonar el repositorio:**  
    ```bash
    git clone https://github.com/MiguelAndresGuerrero/Menu-APIs.git
+   ```
+2. Abre el archivo ```index.html``` en tu navegador.
 
-## 🤝 Contribuciones
-### Si deseas contribuir:
-
-#### 1. Haz un fork del repositorio.
-#### 2. Crea una nueva rama con git checkout -b nueva-funcionalidad.
-#### 3. Realiza tus cambios y haz commit con git commit -m "Descripción del cambio".
-#### 4. Envía un pull request para revisión.
-   
-## Contacto
-### Para preguntas o sugerencias, puedes contactarme a través de Guerreromiguelmartinez@gmail.com.
+## 🌐 Demo en línea
+Puedes probar la aplicación en la web aquí:
+https://miguelandresguerrero.github.io/Menu-APIs
