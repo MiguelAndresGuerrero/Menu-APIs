@@ -1,5 +1,6 @@
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Arial', Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
 body,
@@ -8,17 +9,21 @@ html {
     padding: 0;
     height: 100%;
     overflow: hidden;
+    background-color: #0b0c1c; /* fondo oscuro tipo espacio */
 }
 
+/* Contenedor principal */
 .contenedor {
     position: relative;
-    height: 100%;
     width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
 }
 
+/* Imagen de fondo */
 .video-fondo {
     position: absolute;
     top: 0;
@@ -26,43 +31,94 @@ html {
     width: 100vw;
     height: 100vh;
     object-fit: cover;
-    z-index: -1;
+    z-index: 1;
+    filter: brightness(0.3) blur(1.5px);
+    transition: filter 0.5s ease-in-out;
 }
 
+/* Menú principal */
 .menu2 {
     position: relative;
     z-index: 1;
+    background: rgba(15, 10, 30, 0.6); /* fondo más acorde al espacio */
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(162, 113, 255, 0.2);
+    text-align: center;
+    backdrop-filter: blur(4px);
+    animation: fadeIn 1.2s ease forwards;
 }
 
+/* Links del menú */
 .menu2 a {
     display: block;
-    color: white;
+    color: #ffffff;
     text-decoration: none;
-    margin: 10px 0;
-    font-size: 1.5em;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+    margin: 15px 0;
+    font-size: 1.4em;
+    padding: 12px 25px;
+    border-radius: 8px;
+    background: linear-gradient(to right, rgba(162, 113, 255, 0.6), rgba(75, 90, 255, 0.6));
+    backdrop-filter: blur(2px);
+    transition: transform 0.2s ease, background 0.3s ease;
 }
 
 .menu2 a:hover {
-    background-color: rgba(0, 0, 0, 0.7);
+    background: linear-gradient(to right, rgba(255, 119, 233, 0.8), rgba(75, 90, 255, 0.8));
+    transform: scale(1.05);
 }
 
+/* Detalles del menú */
 details {
-    color: white;
-    font-size: 30px;
+    color: #fff;
+    font-size: 1.8em;
     cursor: pointer;
-    padding: 4px;
-    text-shadow: 0px 0px 10px rgb(255, 166, 0),
-        0px 0px 20px rgb(255, 166, 0),
-        0px 0px 60px rgb(255, 166, 0),
-        0px 0px 80px rgb(255, 166, 0);
-
+    padding: 12px 24px;
+    border-radius: 10px;
+    background-color: rgba(11, 12, 28, 0.7);
+    text-shadow:
+        0 0 5px #a271ff,
+        0 0 10px #a271ff,
+        0 0 20px #a271ff,
+        0 0 40px #a271ff;
+    box-shadow:
+        0 0 20px rgba(162, 113, 255, 0.3),
+        0 0 60px rgba(162, 113, 255, 0.4);
+    transition: all 0.4s ease-in-out;
+    border: none;
 }
 
-details{
-    transition: 2s;
+details:hover {
+    background-color: rgba(11, 12, 28, 0.85);
+    box-shadow:
+        0 0 25px rgba(255, 119, 233, 0.5),
+        0 0 80px rgba(255, 119, 233, 0.6);
+}
+
+/* Animación al cargar */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .menu2 {
+        padding: 20px;
+    }
+
+    .menu2 a {
+        font-size: 1.1em;
+        padding: 10px 20px;
+    }
+
+    details {
+        font-size: 1.5em;
+    }
 }

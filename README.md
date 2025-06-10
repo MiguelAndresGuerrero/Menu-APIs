@@ -1,20 +1,45 @@
-# Menu-APIs
+# 📋 Menu-APIs
 
-**Menu-APIs** es una aplicación web desarrollada con HTML, CSS y JavaScript que presenta un menú interactivo para explorar diferentes APIs públicas. Cada opción del menú permite al usuario acceder y visualizar datos de diversas fuentes externas, facilitando la práctica de consumo de APIs y manipulación del DOM.
+**Menu-APIs** es un proyecto en desarrollo que ofrece una interfaz web tipo menú hamburguesa, diseñada para visualizar y acceder fácilmente a diferentes APIs desarrolladas en HTML, CSS y JavaScript.
 
-## 🚀 Requisitos
+Actualmente, incluye una maqueta visual funcional que servirá como base para conectar con rutas API en el futuro.
 
-- Navegador web actualizado
+---
 
-## 🛠️ Instalación y ejecución
+## 🌐 Vista general
 
-1. Clona el repositorio:
+Este proyecto busca centralizar el acceso a múltiples APIs desde una única interfaz intuitiva. Entre sus características:
 
-   ```bash
-   git clone https://github.com/MiguelAndresGuerrero/Menu-APIs.git
-   ```
-2. Abre el archivo ```index.html``` en tu navegador.
+- Menú tipo hamburguesa con diseño moderno y responsivo.
+- Visualización clara de enlaces a APIs propias.
 
-## 🌐 Demo en línea
-Puedes probar la aplicación en la web aquí:
-https://miguelandresguerrero.github.io/Menu-APIs
+---
+
+## 📷 Cómo verlo
+
+Abre el archivo `index.html` directamente en tu navegador para explorar la interfaz.
+
+---
+
+## 📁 Estructura del proyecto
+
+```plaintext
+Menu-APIs/
+├── media/        # Recursos visuales como imágenes o íconos
+├── index.html    # Página principal con el menú
+├── style.css     # Estilos asociados a la interfaz
+└── README.md     # Documentación del proyecto
+```
+
+---
+
+## 🤝 Contribuciones
+
+¡Este proyecto está abierto a contribuciones! Si deseas colaborar, abre un _issue_ o envía un _pull request_.
+
+---
+
+## 👨‍💻 Autor
+
+- **Miguel Andrés Guerrero**  
+  GitHub: [@MiguelAndresGuerrero](https://github.com/MiguelAndresGuerrero)
